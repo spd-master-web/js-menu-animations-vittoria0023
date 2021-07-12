@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const close = document.querySelector('.close');
 
   hamburger.addEventListener('click', (e) => {
-    // animate here when open the menu
+  gsap.to('aside', {x:-50, ease: 'elastic' })
   })
+
 
   close.addEventListener('click', () => {
     // animate here when close the menu
